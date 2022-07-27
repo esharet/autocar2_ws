@@ -25,6 +25,11 @@ RUN sudo apt-get -y install --no-install-recommends ros-${ROS_DISTRO}-teleop-twi
 RUN sudo apt-get -y install --no-install-recommends ros-${ROS_DISTRO}-test-msgs
    
 RUN sudo apt-get -y install --no-install-recommends ros-${ROS_DISTRO}-slam-toolbox
+# important to fix rosidl_typesupport_c error ! 
+RUN sudo apt-get update; sudo apt-get -y dist-upgrade 
+RUN pip3 install --upgrade numpy
+RUN pip3 install streamlit 
+
 # RUN sudo apt-get -y install --no-install-recommends ros-${ROS_DISTRO}-domain-bridge
 
 # cleaning

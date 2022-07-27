@@ -52,11 +52,15 @@
 
     <!-- Import our own robot -->
     <include>
-      <!-- Set the location where we want to spawn the robot -->
-      <!-- <pose>-3.6 0.7 0.5 0.0 0.0 0.0</pose> -->
-      <!-- <pose>-3.6 0.7 0.5 0.0 0.0 1.5741</pose> -->
+      <!-- robot inside the house -->
+      <pose>-3.6 0.7 0.5 0.0 0.0 0.0</pose>
 
-      <pose>0 -1.7 0.5 0.0 0.0 0</pose>
+      <!-- robot outside the house -->
+      <!-- <pose>0 -1.7 0.5 0.0 0.0 0</pose> -->
+
+      <!-- robot inside the interior most room -->
+      <!-- <pose>5.633039 -2.717500 0.5 0.0 0.0 -1.652947</pose> -->
+
       <!-- dorothy_robot -->
       <!-- <uri>model://dorothy</uri> -->
       <uri>model://dorothy_ackermann</uri>

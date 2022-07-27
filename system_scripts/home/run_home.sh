@@ -21,6 +21,10 @@ tmux new-window  -n point_and_shoot
 tmux select-window -t "point_and_shoot"
 tmux send-keys "run_point_and_shoot.sh $HOME_DOMAIN_ID" KPENTER
 
+tmux new-window  -n streamlit 
+tmux select-window -t "streamlit"
+tmux send-keys "start_streamlit.sh $HOME_DOMAIN_ID" KPENTER
+
 tmux new-window  -n domain_bridge
 tmux select-window -t "domain_bridge"
 tmux send-keys "start_domain_bridge.sh $EDGE_DOMAIN_ID $HOME_DOMAIN_ID " KPENTER

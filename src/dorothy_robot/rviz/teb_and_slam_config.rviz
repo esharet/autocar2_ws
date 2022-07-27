@@ -5,13 +5,9 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /TF1
         - /TF1/Frames1
         - /LaserScan1/Topic1
-        - /PointStamped1
-        - /Marker1
         - /Marker1/Topic1
-        - /Path1
         - /PointStamped2
       Splitter Ratio: 0.5
     Tree Height: 741
@@ -211,7 +207,7 @@ Visualization Manager:
       Position Transformer: XYZ
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.05000000074505806
       Style: Flat Squares
       Topic:
         Depth: 5
@@ -242,7 +238,7 @@ Visualization Manager:
       Enabled: true
       Name: Marker
       Namespaces:
-        {}
+        "": true
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -373,17 +369,17 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz_default_plugins/Orbit
-      Distance: 26.35409927368164
+      Class: rviz_default_plugins/XYOrbit
+      Distance: 13.589189529418945
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -2.7783732414245605
-        Y: -2.87764573097229
-        Z: -0.050310444086790085
+        X: 1.8275370597839355
+        Y: 3.218209743499756
+        Z: -2.503927862562705e-05
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -391,8 +387,8 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 2.84250807762146
+      Value: XYOrbit (rviz_default_plugins)
+      Yaw: 6.269800662994385
     Saved: ~
 Window Geometry:
   Displays:
